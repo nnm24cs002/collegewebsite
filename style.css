@@ -1,74 +1,136 @@
+/* ===== Base Styles ===== */
 body {
-    margin:0;
-    padding:0;
-    background: #3F5EFB;
-    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  margin: 0;
+  padding: 0;
+  background-image: url(nmam-institute-of-technology-nmamit-karnataka.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
 }
+
 .image-header {
-    color:white;
-    background-color:black;
-    display:flex;
-    align-items:center;
+  color: white;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
+
+.page {
+  padding-left: 15px;
+  font-size: 14px;
+}
+
 .lef {
-    list-style-type:none;
-    position: absolute;
-    right: 0px;
-    width: 150px;
+  list-style-type: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  text-align: right;
+  color: white;
 }
-.nav{
-    list-style-type:none;
-    margin:0;
-   
-    padding:8px;
-    background-color: rgb(83, 82, 82);
-    color:aliceblue;
+.lef li {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
+
 .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    overflow: hidden;
-    background-color: #5e5d5d;
-  }
-
-  
- .nav li {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 165px;
-    text-decoration: none;
-    float: left;
-    justify-content:center;
-    border-right: 1px solid #bbb;
-    display:block;
-  } 
-  
- .nav li:hover {
-    background-color: #f7f7fc;
-    color:rgb(22, 22, 22);
-  }
-.page{
-    padding:2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #5e5d5d;
+  display: flex;
+  justify-content: center;
 }
+
+.nav li {
+  position: relative; 
+  padding: 14px 100px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav li:hover {
+  background-color: #f7f7fc;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;             
+  position: absolute;
+  top: 100%;                   
+  left: 0;
+  background-color: #5e5d5d;
+  min-width: 180px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+  color: white;
+  border-bottom: 1px solid #bbb;
+  text-align: left;
+}
+
+.dropdown-content li:hover {
+  background-color: #f7f7fc;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgb(28, 28, 29);
-    color:#f7f7fc; 
-}  
-.links ul{
-    list-style-type: none;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    color:
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(28, 28, 29);
+  color: #f7f7fc;
+  padding: 15px 0;
 }
-.links li{
-    display:inline;
-    text-align: center;
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.social-icons a {
+  font-size: 1.8rem;
+  color: rgb(120, 116, 116);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+.links ul {
+  list-style-type: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.links li {
+  display: inline;
+  text-align: center;
+}
+.page a{
+  color:white;
+  text-decoration:none;
+}
+.dropdown-content a{
+  color:rgb(5, 5, 5);
+  text-decoration: none;
+}
+.home a{
+  color:white;
+  text-decoration: none;
 }
