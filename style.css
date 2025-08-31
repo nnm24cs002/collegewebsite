@@ -1,4 +1,3 @@
-/* Make page take full height and use flexbox layout */
 html, body {
   height: 100%;
   margin: 0;
@@ -14,7 +13,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Header */
 .image-header {
   color: white;
   background-color: black;
@@ -41,7 +39,7 @@ body {
   margin-bottom: 5px;
 }
 
-/* Navigation */
+
 .nav {
   list-style: none;
   margin: 0;
@@ -92,9 +90,8 @@ body {
   display: block;
 }
 
-/* Content box */
 .wrapper {
-  flex: 1;  /* push footer down */
+  flex: 1;  
   width: 45%;          
   margin-left: auto;       
   margin-right: 20px;      
@@ -109,7 +106,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Footer stays at bottom */
 .footer {
   background-color: black;
   color: white;
@@ -134,7 +130,6 @@ body {
   color: #ccc;
 }
 
-/* Links */
 .page a{
   color:white;
   text-decoration:none;
