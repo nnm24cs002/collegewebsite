@@ -1,14 +1,20 @@
-body {
+/* Make page take full height and use flexbox layout */
+html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
   background-image: url(nmam-institute-of-technology-nmamit-karnataka.avif);
   background-repeat: no-repeat;
   background-size: cover;
-  
   background-attachment: fixed;
   font-family: Arial, sans-serif;
 }
 
+/* Header */
 .image-header {
   color: white;
   background-color: black;
@@ -35,6 +41,7 @@ body {
   margin-bottom: 5px;
 }
 
+/* Navigation */
 .nav {
   list-style: none;
   margin: 0;
@@ -85,13 +92,28 @@ body {
   display: block;
 }
 
+/* Content box */
+.wrapper {
+  flex: 1;  /* push footer down */
+  width: 45%;          
+  margin-left: auto;       
+  margin-right: 20px;      
+  background: transparent; 
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: black;
+  border-radius: 20px;
+  padding: 30px 40px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Footer stays at bottom */
 .footer {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
   background-color: black;
   color: white;
+  text-align: center;
   padding: 15px 0;
 }
 
@@ -112,6 +134,7 @@ body {
   color: #ccc;
 }
 
+/* Links */
 .page a{
   color:white;
   text-decoration:none;
@@ -126,17 +149,4 @@ body {
 }
 .home a:hover{
   color:black;
-}
-.wrapper {
-    width: 45%;          
-    margin-left: auto;       
-    margin-right: 20px;      
-    background: transparent; 
-    border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    color: black;
-    border-radius: 20px;
-    padding: 30px 40px;
-    font-size: 15px;
 }
